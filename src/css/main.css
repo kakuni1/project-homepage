@@ -1,0 +1,184 @@
+:root {
+  --color-bg: #1a1b26;
+  --color-surface: #24283b;
+  --color-text: #c0caf5;
+  --color-muted: #a9b1d6;
+  --color-border: #414868;
+  --color-link: #7aa2f7;
+  --color-focus: #7dcfff;
+  --color-error: #f7768e;
+  --color-valid: #9ece6a;
+}
+
+@font-face {
+  font-family: "LINE Seed JP";
+  src: url("../assets/fonts/LINESeed/Thin/LINESeedJP-Thin-latin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020-007E, U+00A0-00FF, U+0100-024F, U+0300-036F, U+2000-206F, U+20A0-20CF, U+2122;
+}
+
+@font-face {
+  font-family: "LINE Seed JP";
+  src: url("../assets/fonts/LINESeed/Thin/LINESeedJP-Thin-kana.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+3000-30FF, U+31F0-31FF, U+FF00-FFEF;
+}
+
+@font-face {
+  font-family: "LINE Seed JP";
+  src: url("../assets/fonts/LINESeed/Thin/LINESeedJP-Thin-kanji.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF;
+}
+
+@font-face {
+  font-family: "LINE Seed JP";
+  src: url("../assets/fonts/LINESeed/Regular/LINESeedJP-Regular-latin.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020-007E, U+00A0-00FF, U+0100-024F, U+0300-036F, U+2000-206F, U+20A0-20CF, U+2122;
+}
+
+@font-face {
+  font-family: "LINE Seed JP";
+  src: url("../assets/fonts/LINESeed/Regular/LINESeedJP-Regular-kana.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+3000-30FF, U+31F0-31FF, U+FF00-FFEF;
+}
+
+@font-face {
+  font-family: "LINE Seed JP";
+  src: url("../assets/fonts/LINESeed/Regular/LINESeedJP-Regular-kanji.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF;
+}
+
+@font-face {
+  font-family: "LINE Seed JP";
+  src: url("../assets/fonts/LINESeed/Bold/LINESeedJP-Bold-latin.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020-007E, U+00A0-00FF, U+0100-024F, U+0300-036F, U+2000-206F, U+20A0-20CF, U+2122;
+}
+
+@font-face {
+  font-family: "LINE Seed JP";
+  src: url("../assets/fonts/LINESeed/Bold/LINESeedJP-Bold-kana.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+3000-30FF, U+31F0-31FF, U+FF00-FFEF;
+}
+
+@font-face {
+  font-family: "LINE Seed JP";
+  src: url("../assets/fonts/LINESeed/Bold/LINESeedJP-Bold-kanji.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF;
+}
+
+@font-face {
+  font-family: "LINE Seed JP";
+  src: url("../assets/fonts/LINESeed/ExtraBold/LINESeedJP-ExtraBold-latin.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020-007E, U+00A0-00FF, U+0100-024F, U+0300-036F, U+2000-206F, U+20A0-20CF, U+2122;
+}
+
+@font-face {
+  font-family: "LINE Seed JP";
+  src: url("../assets/fonts/LINESeed/ExtraBold/LINESeedJP-ExtraBold-kana.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+3000-30FF, U+31F0-31FF, U+FF00-FFEF;
+}
+
+@font-face {
+  font-family: "LINE Seed JP";
+  src: url("../assets/fonts/LINESeed/ExtraBold/LINESeedJP-ExtraBold-kanji.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+3400-4DBF, U+4E00-9FFF, U+F900-FAFF;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  font-family: "LINE Seed JP", "Noto Sans JP", "Hiragino Sans", "Yu Gothic", "Meiryo", system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}

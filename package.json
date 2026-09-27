@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "biome format --write . && dprint fmt",
+    "format:check": "biome ci --formatter-enabled=true --linter-enabled=false --assist-enabled=false . && dprint check"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.14",
+    "dprint": "0.57.4",
+    "vite": "8.3.1"
+  },
+  "allowScripts": {
+    "dprint@0.57.4": true
+  }
+}

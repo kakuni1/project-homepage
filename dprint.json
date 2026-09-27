@@ -1,0 +1,18 @@
+{
+  "lineWidth": 120,
+  "json": {},
+  "markup": {},
+  "markdown": {
+    "lineWidth": 80,
+    "textWrap": "maintainAndWrap"
+  },
+  "excludes": [
+    "**/*-lock.json"
+  ],
+  "plugins": [
+    "npm:@dprint/json@0.24.0",
+    "npm:dprint-plugin-markup@0.27.3",
+    "npm:dprint-plugin-yaml@0.6.0",
+    "npm:@dprint/markdown@0.24.0"
+  ]
+}
