@@ -7,6 +7,9 @@
     "format": "biome format --write . && dprint fmt",
     "format:check": "biome ci --formatter-enabled=true --linter-enabled=false --assist-enabled=false . && dprint check"
   },
+  "dependencies": {
+    "lucide": "^1.48.0"
+  },
   "devDependencies": {
     "@biomejs/biome": "2.5.14",
     "dprint": "0.57.4",
@@ -14,8 +17,5 @@
   },
   "allowScripts": {
     "dprint@0.57.4": true
-  },
-  "dependencies": {
-    "lucide": "^1.48.0"
   }
 }
