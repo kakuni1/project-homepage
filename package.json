@@ -14,5 +14,8 @@
   },
   "allowScripts": {
     "dprint@0.57.4": true
+  },
+  "dependencies": {
+    "lucide": "^1.48.0"
   }
 }

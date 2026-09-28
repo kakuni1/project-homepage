@@ -5,3 +5,9 @@ html {
 p {
   color: var(--color-text);
 }
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-link);
+}
