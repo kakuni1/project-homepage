@@ -163,6 +163,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--color-text);
   overflow-wrap: break-word;
 }
 
@@ -181,4 +182,32 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+body {
+  margin: 8px;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 12px;
+  }
+}
+
+@media (max-width: 1080px) {
+  body {
+    margin: 16px;
+  }
+}
+
+@media (max-width: 1440px) {
+  body {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 9999px) {
+  body {
+    margin: 24px;
+  }
 }

@@ -3,11 +3,38 @@ html {
 }
 
 p {
-  color: var(--color-text);
+  font-size: 0.975rem;
 }
 
-.icon {
-  width: 24px;
-  height: 24px;
-  color: var(--color-link);
+.container {
+  background-color: var(--color-surface);
+  border-radius: 0.25rem;
+  width: 100%;
+  max-width: 72ch;
+  margin-inline: auto;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-inline: 0.5rem;
+}
+
+.link {
+  display: inline-flex;
+  padding: 4px; /* larger click area */
+}
+
+a img {
+  filter: invert(1) brightness(0.875);
+}
+
+.link:hover,
+.link:focus-visible {
+  outline: 2px solid var(--color-focus);
+  border-radius: 0.25rem;
+  outline-offset: -2px;
+}
+
+#link-github {
+  display: flex;
+  width: fit-content;
+  margin-inline-start: auto;
 }
