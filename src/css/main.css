@@ -185,7 +185,13 @@ h6 {
 }
 
 body {
-  margin: 8px;
+  margin: 6px;
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 8px;
+  }
 }
 
 @media (max-width: 768px) {
