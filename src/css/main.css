@@ -211,9 +211,3 @@ body {
     margin: 20px;
   }
 }
-
-@media (max-width: 9999px) {
-  body {
-    margin: 24px;
-  }
-}
