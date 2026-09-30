@@ -188,15 +188,9 @@ body {
   margin: 6px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1440px) {
   body {
-    margin: 8px;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    margin: 12px;
+    margin: 20px;
   }
 }
 
@@ -206,8 +200,14 @@ body {
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 768px) {
   body {
-    margin: 20px;
+    margin: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 8px;
   }
 }
