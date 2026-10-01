@@ -54,6 +54,7 @@ p {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-inline: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.55) 0px 24px 72px 6px;
 }
 
 .link {
