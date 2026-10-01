@@ -64,8 +64,18 @@ a img {
   flex: 1; /* allow grow/shrink */
 }
 
+@media (max-width: 900px) {
+  header {
+    margin-top: 0rem;
+  }
+}
+
 /* no header image for small viewports */
-@media (max-width: 600px) {
+@media (max-width: 720px) {
+  header {
+    margin-top: 0rem;
+  }
+
   #image-header {
     display: none;
   }
