@@ -1,5 +1,24 @@
 html {
   background-color: var(--color-bg);
+  overflow-x: clip;
+}
+
+body {
+  min-width: 345px;
+  isolation: isolate;
+}
+
+header {
+  margin-top: 5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.5rem;
 }
 
 body {
@@ -25,9 +44,9 @@ p {
 }
 
 .container {
+  background-color: var(--color-surface);
   display: flex;
   gap: 2rem;
-  background-color: var(--color-surface);
   border-radius: 0.25rem;
   width: 100%;
   max-width: 72ch;
@@ -64,8 +83,34 @@ a img {
   flex: 1; /* allow grow/shrink */
 }
 
+#background-decoration {
+  background-color: var(--color-muted);
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+  right: -2.5rem;
+  height: 15rem;
+  filter: brightness(0.75);
+  transform: rotate(-1.77deg);
+  z-index: -1;
+}
+
+@media (max-width: 900px) {
+  header {
+    margin-top: 0rem;
+  }
+}
+
 /* no header image for small viewports */
-@media (max-width: 600px) {
+@media (max-width: 720px) {
+  header {
+    margin-top: 0rem;
+  }
+
+  #background-decoration {
+    display: none;
+  }
+
   #image-header {
     display: none;
   }
