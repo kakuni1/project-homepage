@@ -1,9 +1,11 @@
 html {
   background-color: var(--color-bg);
+  overflow-x: clip;
 }
 
 body {
   min-width: 345px;
+  isolation: isolate;
 }
 
 header {
@@ -64,6 +66,18 @@ a img {
   flex: 1; /* allow grow/shrink */
 }
 
+#background-decoration {
+  background-color: var(--color-muted);
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+  right: -2.5rem;
+  height: 15rem;
+  filter: brightness(0.75);
+  transform: rotate(-1.77deg);
+  z-index: -1;
+}
+
 @media (max-width: 900px) {
   header {
     margin-top: 0rem;
@@ -74,6 +88,10 @@ a img {
 @media (max-width: 720px) {
   header {
     margin-top: 0rem;
+  }
+
+  #background-decoration {
+    display: none;
   }
 
   #image-header {
