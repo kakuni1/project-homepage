@@ -7,11 +7,13 @@ p {
 }
 
 .container {
+  display: flex;
+  gap: 2rem;
   background-color: var(--color-surface);
   border-radius: 0.25rem;
   width: 100%;
   max-width: 72ch;
-  margin-inline: auto;
+  margin-inline: auto; /* center header */
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-inline: 0.5rem;
@@ -26,6 +28,36 @@ a img {
   filter: invert(1) brightness(0.875);
 }
 
+#image-header {
+  flex: none; /* no grow/shrink, 200 width */
+  align-self: center;
+  width: 200px;
+  border-radius: 0.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  row-gap: 1rem;
+  min-width: 0;
+  flex: 1; /* allow grow/shrink */
+}
+
+/* no header image for small viewports */
+@media (max-width: 600px) {
+  #image-header {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+
 .link:hover,
 .link:focus-visible {
   outline: 2px solid var(--color-focus);
@@ -34,7 +66,7 @@ a img {
 }
 
 #link-github {
-  display: flex;
   width: fit-content;
   margin-inline-start: auto;
+  align-self: flex-end;
 }
