@@ -2,8 +2,91 @@ html {
   background-color: var(--color-bg);
 }
 
+body {
+  min-width: 360px;
+}
+
+header {
+  margin-top: 5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.5rem;
+}
+
 p {
-  color: var(--color-text);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  background-color: var(--color-surface);
+  border-radius: 0.25rem;
+  width: 100%;
+  max-width: 72ch;
+  margin-inline: auto; /* center header */
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-inline: 0.5rem;
+}
+
+.link {
+  display: inline-flex;
+  padding: 4px; /* larger click area */
+}
+
+a img {
+  filter: invert(1) brightness(0.875);
+}
+
+#image-header {
+  flex: none; /* no grow/shrink, 200 width */
+  align-self: center;
+  width: 200px;
+  border-radius: 0.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  row-gap: 1rem;
+  min-width: 0;
+  flex: 1; /* allow grow/shrink */
+}
+
+/* no header image for small viewports */
+@media (max-width: 600px) {
+  #image-header {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+
+.link:hover,
+.link:focus-visible {
+  outline: 2px solid var(--color-focus);
+  border-radius: 0.25rem;
+  outline-offset: -2px;
+}
+
+#link-github {
+  width: fit-content;
+  margin-inline-start: auto;
+  align-self: flex-end;
 }
 
 .icon {
