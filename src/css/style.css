@@ -68,7 +68,6 @@ a img {
 #image-header {
   flex: none; /* no grow/shrink, 200 width */
   align-self: center;
-  width: 200px;
   border-radius: 0.25rem;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
