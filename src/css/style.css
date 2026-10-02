@@ -12,19 +12,26 @@ header {
   margin-top: 5rem;
 }
 
+p {
+  color: var(--color-text);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  color: var(--color-text);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-p {
-  font-size: 0.95rem;
-  margin-bottom: 0.5rem;
+main.container {
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .container {
@@ -71,6 +78,32 @@ p {
   z-index: -1;
 }
 
+.card-collection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.card-content {
+  background-color: var(--color-muted);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 48px 4px;
+  border-radius: 0.25rem;
+  min-height: 10rem;
+  padding: 1rem;
+  filter: brightness(0.875);
+}
+
+.card-content p,
+.card-content h1,
+.card-content h2,
+.card-content h3,
+.card-content h4,
+.card-content h5,
+.card-content h6 {
+  color: var(--color-surface);
+}
+
 .link {
   display: inline-flex;
   padding: 4px; /* larger click area */
@@ -84,6 +117,10 @@ a img {
   header {
     margin-top: 0rem;
   }
+
+  #background-decoration {
+    height: 10rem;
+  }
 }
 
 /* no header image for small viewports */
@@ -93,7 +130,7 @@ a img {
   }
 
   #background-decoration {
-    display: none;
+    height: 10rem;
   }
 
   #image-header {
