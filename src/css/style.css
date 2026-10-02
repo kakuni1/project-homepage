@@ -57,15 +57,6 @@ p {
   box-shadow: rgba(0, 0, 0, 0.55) 0px 24px 72px 6px;
 }
 
-.link {
-  display: inline-flex;
-  padding: 4px; /* larger click area */
-}
-
-a img {
-  filter: invert(1) brightness(0.875);
-}
-
 #image-header {
   flex: none; /* no grow/shrink, 200 width */
   align-self: center;
@@ -93,6 +84,15 @@ a img {
   filter: brightness(0.75);
   transform: rotate(-1.77deg);
   z-index: -1;
+}
+
+.link {
+  display: inline-flex;
+  padding: 4px; /* larger click area */
+}
+
+a img {
+  filter: invert(1) brightness(0.875);
 }
 
 @media (max-width: 900px) {
