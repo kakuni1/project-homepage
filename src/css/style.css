@@ -19,6 +19,7 @@ h4,
 h5,
 h6 {
   margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
@@ -52,7 +53,6 @@ p {
   display: flex;
   flex-direction: column;
   align-self: stretch;
-  row-gap: 1rem;
   min-width: 0;
   flex: 1; /* allow grow/shrink */
 }
