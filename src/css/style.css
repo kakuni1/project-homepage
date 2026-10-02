@@ -60,12 +60,13 @@ p {
 #background-decoration {
   background-color: var(--color-muted);
   position: absolute;
-  top: -2.5rem;
-  left: -2.5rem;
-  right: -2.5rem;
+  top: 0;
+  left: 0rem;
+  right: 0rem;
   height: 15rem;
   filter: brightness(0.75);
-  transform: rotate(-1.77deg);
+  /* use polygon to draw background decoration */
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.35vw), 0 100%);
   z-index: -1;
 }
 
