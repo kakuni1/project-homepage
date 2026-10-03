@@ -37,6 +37,7 @@ h6 {
   width: 100%;
   max-width: 72ch;
   margin-inline: auto; /* center header */
+  margin-bottom: 1rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-inline: 0.5rem;
