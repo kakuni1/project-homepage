@@ -5,6 +5,10 @@ html {
 
 body {
   min-width: 345px;
+  display: flex;
+  flex-direction: column;
+  margin-block: 0;
+  min-height: 100vh;
   isolation: isolate;
 }
 
@@ -51,14 +55,15 @@ main.container {
 
 footer.container {
   background-color: var(--color-muted);
-  border-radius: 0;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2rem;
+  border-radius: 0;
+  margin-bottom: 0;
+  margin-block-start: auto; /* ununsed space as margin */
+  margin-inline: calc(50% - 50vw); /* adds negative margin */
+  height: 1.75rem;
+  width: 100vw;
   filter: brightness(0.75);
   max-width: none;
 }
@@ -159,7 +164,7 @@ footer p {
 /* no header image for small viewports */
 @media (max-width: 720px) {
   header {
-    margin-top: 0rem;
+    margin-top: 0.35rem;
   }
 
   #background-decoration {
