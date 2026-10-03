@@ -77,7 +77,8 @@ main.container {
   height: 15rem;
   filter: brightness(0.75);
   /* use polygon to draw background decoration */
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.35vw), 0 100%);
+  /* each entry is coords for connecting line */
+  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 1.35vw), 0% 100%);
   z-index: -1;
 }
 
