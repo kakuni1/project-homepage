@@ -179,6 +179,10 @@ footer p {
     flex-direction: column;
     row-gap: 1rem;
   }
+
+  #card-collection {
+    grid-template-columns: 1fr;
+  }
 }
 
 .link:hover,
