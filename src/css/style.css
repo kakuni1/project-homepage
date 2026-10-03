@@ -29,11 +29,6 @@ h6 {
   margin-bottom: 0.5rem;
 }
 
-main.container {
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
 .container {
   background-color: var(--color-surface);
   display: flex;
@@ -46,6 +41,29 @@ main.container {
   padding-bottom: 0.25rem;
   padding-inline: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.55) 0px 24px 72px 6px;
+}
+
+main.container {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer.container {
+  background-color: var(--color-muted);
+  border-radius: 0;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2rem;
+  filter: brightness(0.75);
+  max-width: none;
+}
+
+footer p {
+  margin-bottom: 0;
 }
 
 .core {
@@ -89,6 +107,12 @@ main.container {
   width: 100%;
 }
 
+#stack-collection {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+
 .card-content {
   background-color: var(--color-muted);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 48px 4px;
@@ -96,6 +120,15 @@ main.container {
   min-height: 10rem;
   padding: 1rem;
   filter: brightness(0.875);
+}
+
+.link {
+  display: inline-flex;
+  padding: 4px; /* larger click area */
+}
+
+a img {
+  filter: invert(1) brightness(0.875);
 }
 
 .card-content p,
@@ -108,13 +141,8 @@ main.container {
   color: var(--color-surface);
 }
 
-.link {
-  display: inline-flex;
-  padding: 4px; /* larger click area */
-}
-
-a img {
-  filter: invert(1) brightness(0.875);
+footer p {
+  color: var(--color-surface);
 }
 
 @media (max-width: 900px) {
