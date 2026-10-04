@@ -120,12 +120,19 @@ footer p {
 }
 
 .card-content {
+  display: flex;
   background-color: var(--color-muted);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 20px 48px 4px;
   border-radius: 0.25rem;
+  margin-bottom: 0.35rem;
   min-height: 10rem;
   padding: 1rem;
+  gap: 1rem;
   filter: brightness(0.875);
+}
+
+.card-content img {
+  border-radius: 0.25rem;
 }
 
 .link {
@@ -153,7 +160,7 @@ footer p {
 
 @media (max-width: 900px) {
   header {
-    margin-top: 0rem;
+    margin-top: 0.35rem;
   }
 
   #background-decoration {
@@ -178,6 +185,10 @@ footer p {
   .container {
     flex-direction: column;
     row-gap: 1rem;
+  }
+
+  #card-collection {
+    grid-template-columns: 1fr;
   }
 }
 
