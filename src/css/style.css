@@ -157,6 +157,12 @@ footer p {
   filter: invert(1) brightness(0.875);
 }
 
+#link-github img:hover,
+#link-github:focus-visible img {
+  filter: invert(1) brightness(1);
+  transition: filter 120ms ease;
+}
+
 .link {
   display: inline-flex;
   padding: 4px; /* larger click area */
