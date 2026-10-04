@@ -190,6 +190,11 @@ footer p {
   color: var(--color-link);
 }
 
+#stack-collection img:hover {
+  transform: scale(1.125);
+  transition: transform 120ms ease;
+}
+
 .card-content p,
 .card-content h1,
 .card-content h2,
