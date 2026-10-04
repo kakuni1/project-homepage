@@ -129,19 +129,59 @@ footer p {
   padding: 1rem;
   gap: 1rem;
   filter: brightness(0.875);
+  outline: 3px solid transparent;
+  outline-offset: -1px;
+  transition:
+    filter 120ms ease,
+    outline-color 120ms ease,
+    transform 120ms ease;
 }
 
 .card-content img {
   border-radius: 0.25rem;
 }
 
+.card-link {
+  text-decoration: none;
+}
+
+.card-link:hover,
+.card-link:focus-visible {
+  filter: brightness(1);
+  outline: 3px solid var(--color-focus);
+  outline-offset: -1px;
+  transform: scale(1.0075);
+}
+
+#link-github img {
+  filter: invert(1) brightness(0.875);
+}
+
 .link {
   display: inline-flex;
   padding: 4px; /* larger click area */
+  outline: 2px solid transparent;
+  outline-offset: -2px;
 }
 
-a img {
-  filter: invert(1) brightness(0.875);
+.link:hover,
+.link:focus-visible {
+  outline: 2px solid var(--color-focus);
+  border-radius: 0.25rem;
+  outline-offset: -2px;
+  transition: outline-color 120ms ease;
+}
+
+#link-github {
+  width: fit-content;
+  margin-inline-start: auto;
+  align-self: flex-end;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-link);
 }
 
 .card-content p,
@@ -190,23 +230,4 @@ footer p {
   #card-collection {
     grid-template-columns: 1fr;
   }
-}
-
-.link:hover,
-.link:focus-visible {
-  outline: 2px solid var(--color-focus);
-  border-radius: 0.25rem;
-  outline-offset: -2px;
-}
-
-#link-github {
-  width: fit-content;
-  margin-inline-start: auto;
-  align-self: flex-end;
-}
-
-.icon {
-  width: 24px;
-  height: 24px;
-  color: var(--color-link);
 }
