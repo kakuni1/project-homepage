@@ -6,3 +6,6 @@ Thumbs.db
 Desktop.ini
 *.swp
 *.swo
+
+.env
+.env.*
