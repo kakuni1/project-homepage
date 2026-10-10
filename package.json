@@ -14,9 +14,6 @@
     "mise:trust": "mise trust",
     "mise:setup": "mise install && mise exec -- npm ci"
   },
-  "dependencies": {
-    "lucide": "^1.52.0"
-  },
   "devDependencies": {
     "@biomejs/biome": "^2.x",
     "@dprint/json": "^0.x",

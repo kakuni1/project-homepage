@@ -70,6 +70,7 @@ footer.container {
 
 footer p {
   margin-bottom: 0;
+  color: var(--color-surface);
 }
 
 .core {
@@ -163,10 +164,6 @@ footer p {
   transition: filter 120ms ease;
 }
 
-.card-content img {
-  border-radius: 0.25rem;
-}
-
 .link {
   display: inline-flex;
   padding: 4px; /* larger click area */
@@ -206,10 +203,6 @@ footer p {
 .card-content h4,
 .card-content h5,
 .card-content h6 {
-  color: var(--color-surface);
-}
-
-footer p {
   color: var(--color-surface);
 }
 
